@@ -1,0 +1,79 @@
+<!-- wp:group {"style":{"backgroundColor":"blue","padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="background-color:blue;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+  
+  <!-- Nagłówek -->
+  <!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+  <div class="wp-block-group">
+    
+    <!-- Miejsce na Logo -->
+    <!-- wp:image {"id":123,"sizeSlug":"full","linkDestination":"none"} -->
+    <figure class="wp-block-image"><img src="URL_DO_LOGO" alt="Logo"/></figure>
+    <!-- /wp:image -->
+    
+    <!-- Link do Logowania -->
+    <!-- wp:paragraph {"align":"right"} -->
+    <p class="has-text-align-right"><a href="/login">Zaloguj się</a></p>
+    <!-- /wp:paragraph -->
+    
+  </div>
+  <!-- /wp:group -->
+  
+  <!-- Górna Sekcja: Linki do YouTube -->
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"flex-start"}} -->
+  <div class="wp-block-group">
+    <!-- Powtórz ten blok dla każdego linku do YouTube -->
+    <!-- wp:button {"url":"https://youtube.com/link1","style":{"color":{"background":"#ff0000","text":"#ffffff"}}} -->
+    <div class="wp-block-button"><a class="wp-block-button__link" href="https://youtube.com/link1" style="background-color:#ff0000;color:#ffffff">Film 1</a></div>
+    <!-- /wp:button -->
+    
+    <!-- Dodaj więcej przycisków tutaj -->
+    
+  </div>
+  <!-- /wp:group -->
+  
+  <!-- Środkowa Sekcja: Dynamiczna Lista Materiałów -->
+  <!-- wp:group {"layout":{"type":"default"}} -->
+  <div class="wp-block-group">
+    <!-- Możesz użyć bloku Gallery lub Latest Posts w zależności od potrzeb -->
+    <!-- Przykład: Galeria -->
+    <!-- wp:gallery {"columns":3,"linkTo":"none"} -->
+    <figure class="wp-block-gallery columns-3 is-cropped">
+      <ul class="blocks-gallery-grid">
+        <li class="blocks-gallery-item"><img src="URL_DO_OBRAZU1" alt="Materiał 1"/></li>
+        <li class="blocks-gallery-item"><img src="URL_DO_OBRAZU2" alt="Materiał 2"/></li>
+        <li class="blocks-gallery-item"><img src="URL_DO_OBRAZU3" alt="Materiał 3"/></li>
+        <!-- Dodaj więcej obrazów tutaj -->
+      </ul>
+    </figure>
+    <!-- /wp:gallery -->
+  </div>
+  <!-- /wp:group -->
+  
+  <!-- Menu Boczne -->
+  <!-- wp:columns -->
+  <div class="wp-block-columns">
+    
+    <!-- Kolumna Lewa -->
+    <div class="wp-block-column">
+      <!-- wp:navigation {"layout":{"type":"vertical"}} -->
+      <nav class="wp-block-navigation">
+        <ul>
+          <li><a href="/forum">Forum</a></li>
+          <li><a href="/kontakt">Kontakt</a></li>
+          <li><a href="/mapa">Mapa</a></li>
+          <!-- Dodaj więcej linków tutaj -->
+        </ul>
+      </nav>
+      <!-- /wp:navigation -->
+    </div>
+    
+    <!-- Kolumna Prawa (może być pusta lub zawierać dodatkowe informacje) -->
+    <div class="wp-block-column">
+      <!-- Możesz dodać dodatkowe elementy tutaj -->
+    </div>
+    
+  </div>
+  <!-- /wp:columns -->
+  
+</div>
+<!-- /wp:group -->
